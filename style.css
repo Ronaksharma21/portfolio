@@ -1,22 +1,28 @@
-
-
-
 *
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'open sans', sans-serif;
 }
 .banner
 {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 100vh;
     padding: 100px;
     background: #fff;
+    -webkit-transition: 0,5s;
+    -o-transition: 0,5s;
     transition: 0,5s;
     
 }
@@ -31,9 +37,15 @@ header
     left: 0;
     width: 100%;
     padding: 20px 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 header .logo
 {
@@ -41,6 +53,8 @@ header .logo
     font-size: 2em;
     font-weight: 700;
     text-decoration: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 header .logo span
@@ -49,6 +63,8 @@ header .logo span
 }
 header ul
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 40px;
 }
@@ -63,6 +79,8 @@ header ul li a
     font-weight: 500;
     font-size: 1.2em;
     color: #333;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .content 
@@ -76,6 +94,8 @@ header ul li a
     font-size: 2em;
     color: #333;
     font-weight: 200;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .content h2
@@ -83,6 +103,8 @@ header ul li a
     font-size: 5.5em;
     color: #333;
     font-weight: 700;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     
 }
@@ -95,6 +117,8 @@ header ul li a
     font-size: 1.2em;
     color: #666;
     margin: 10px 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .content button
@@ -111,6 +135,8 @@ header ul li a
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 
 }
@@ -131,6 +157,8 @@ header ul li a
 {
     position: absolute;
     bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
 }
@@ -153,16 +181,26 @@ header ul li a
     position: absolute;
     bottom: 25px;
     left: 50px;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 60px;
     height: 60px;
     background: #f0f0f0;
     border-radius: 50%;
     color: #666;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     font-size: 2em;
 }
@@ -199,20 +237,37 @@ header ul li a
 position: absolute;
 right: 0;
 max-width: 500px;
-animation: animatecolor 8s ease-in-out infinite;
+-webkit-animation: animatecolor 8s ease-in-out infinite;
+        animation: animatecolor 8s ease-in-out infinite;
+}
+@-webkit-keyframes animatecolor
+{
+    0%
+    {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+    100%
+    {
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+    }
 }
 @keyframes animatecolor
 {
     0%
     {
-        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
     }
     100%
     {
-        transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px);
     }
 }
 .backimg
 {
-    filter: drop-shadow(10px 10px 10px #ff0000);
+    -webkit-filter: drop-shadow(10px 10px 10px #ff0000);
+            filter: drop-shadow(10px 10px 10px #ff0000);
 }
