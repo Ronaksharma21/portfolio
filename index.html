@@ -4,6 +4,8 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Animated portfolio websitet </title>
             <link rel="stylesheet" type="text/css" href="style.css">
+            
+
              </head>
              <body>
                 <section class="banner">
@@ -20,12 +22,42 @@
                     <div class="content">
                         <h3>Hey..</h3>
                         <h2>I am <span id="text">Ronak</span></h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam velit repudiandae quae nemo, reiciendis quod itaque perspiciatis cupiditate obcaecati ducimus ad esse excepturi accusantium aperiam veritatis vitae mollitia sunt blanditiis.</p>
+                        <p>just a beginner....</p>
                         <button>Hire Me</button>
-                        <button>Let'chat</button>
+                        <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon>Let'chat</button>
 
                     </div>
-                </section>
+                    <img src="backimg.jpg" class="backimg">
+                    <ul class="sci">
+                        <li><a href="https://github.com/Ronaksharma21"><ion-icon name="logo-github"></ion-icon></a></li>
+                        <li><a href="https://wa.me/919777469706"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                        
+                        <li><a href="https://instagram.com/ronak20_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                    <div class="daynight">
+                        <ion-icon name="moon-outline"></ion-icon>
+                        <ion-icon name="sunny-outline"></ion-icon>
+                    </div>
+               
+                
+                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+                <script>
+                    let typingText = new Typed("#text", {
+                    strings: ["Ronak", "Awesome", "coder"],
+                    loop: true,
+                  });
+
+                let banner = document.querySelector(".banner");
+             let daynight = document.querySelector(".daynight");
+    
+             daynight.onclick = function () {
+            banner.classList.toggle('night');
+             };
+        </script>
+                
              </body>
 
 </html>
